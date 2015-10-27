@@ -32,6 +32,11 @@
     <![endif]-->
     <link href="css/freelancer.css" rel="stylesheet">
 
+    <script>
+    $( window ).load(function() {
+        $('iframe').contents().find('.main-header').css('max-height','350px');
+    });
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -73,7 +78,7 @@
     </nav>
     
     <section id="ghostblog">
-        <iframe seamless style="position: absolute; width: 100%; height: 100%; overflow:hidden" src= "http://www.michell.ai/blog">
+        <iframe seamless style="position: absolute; width: 100%; height: 100%; overflow:hidden" src= "http://michell.ai/blog">
         </iframe>
     </section>
 

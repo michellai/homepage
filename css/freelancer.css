@@ -92,7 +92,13 @@ hr.star-primary:after {
 .img-centered {
     margin: 0 auto;
 }
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
 
+    display: flex;
+    align-items: center;
+}
 header {
     /*background: #f5f5f5;*/
 }
@@ -125,10 +131,10 @@ header .intro-text .skills {
     font-weight: 300;
 }
 header #pitch {
-    margin-top:10%;
     font-family: smile;
-    width:50%;
-
+    margin-top: 6%;
+}
+@media(max-width:768px) {
 }
 @media(min-width:768px) {
     header .container {
@@ -213,16 +219,6 @@ section.success {
     left:0px;
 
 }
-iframe[seamless]{
-    background-color: transparent;
-    border: 0px none transparent;
-    padding: 0px;
-    overflow: hidden;
-}
-iframe body > div.site-wrapper > header > div {
-    max-height: 120px;
-}
-
 
 section.success a,
 section.success a:hover,
