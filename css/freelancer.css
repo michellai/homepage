@@ -130,6 +130,12 @@ section #pitch {
     font-family: smile;
 }
 @media(max-width:768px) {
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #FF5256;
+    }
+    button.navbar-toggle {
+        background-color: #FF7E82;
+    }
 }
 @media(min-width:768px) {
     header .container {
@@ -167,6 +173,10 @@ section #pitch {
         padding: .5em .5em;
         margin: .5em .5em;
     }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+        background-color: #D6D8DD; /* #3B445D; */
+        color: #FFF;
+    }
 }
 
 .navbar {
@@ -189,10 +199,8 @@ section #pitch {
 .navbar-default .navbar-nav>li>a {
     color: #ff7e82;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    background-color: #D6D8DD; /* #3B445D; */
-    color: #FFF;
-}
+
+
 .navbar-brand {
     padding: .5em; auto;
     padding-top:.6em;
