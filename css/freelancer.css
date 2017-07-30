@@ -4,8 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 @font-face {
-    font-family: easyrider;
-    src: url("../fonts/frangipani_rose/Frangipani Rose.ttf");
+    font-family: franzsans;
+    src: url("../fonts/FranzSans-Bold.otf");
     font-weight: normal;
 }
 @font-face {
@@ -18,9 +18,11 @@ body {
     overflow-x: hidden;
     background-color: #fff;
 }
-
+.spacer {
+    height: 100px;
+}
 p {
-    font-size: 20px;
+    font-size: 12px;
 }
 p.large {
     font-size: 28px;
@@ -53,7 +55,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: franzsans,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -95,39 +97,63 @@ hr.star-light {
 header {
     /*background: #f5f5f5;*/
 }
-header .profile {
-    display:block;
-    position: absolute;
-    right: 0px;
-    width: 600px;
-}
 
 header .container {
-    padding-top: 100px;
     color: #565a5c;
-    padding-left:12%;
+    padding-left:0;
     padding-right:0;
     padding-top:2em;
     position: relative;
     width:100%;
 }
 
-header img {
+.profilepic {
     /*display: block;*/
     /*margin: 0 auto 20px;*/
     opacity: .95;
+
+}
+.pastco {
+    opacity: .70;
 }
 
+.logo {
+    height:22px;
+    margin-left:2px;
+    margin-right:2px;
+    margin-bottom:2px;
+    padding-bottom:2px;
+}
+.logo.career {
+    height:26px;
+}
+.logo.community {
+    height:32px;
+}
 header .intro-text .skills {
     font-size: 1em;
     font-weight: 100;
 }
 header #pitch {
-    font-family: smile;
-    margin-top: 6%;
+    font-family: franzsans;
+    font-size: 18px;
 }
+
+hr {
+    margin-bottom:5px;
+    margin-top:2px;
+}
+
 section #pitch {
-    font-family: smile;
+    font-family: franzsans;
+}
+li.borderless {
+  border: 0 none;
+  margin-top: 2px;
+
+}
+.list-group-item {
+    margin-bottom: 20px;
 }
 @media(max-width:768px) {
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -181,7 +207,7 @@ section #pitch {
 
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: franzsans,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -219,6 +245,16 @@ a.anchor {
     position: relative;
     top: -3em;
     visibility: hidden;
+}
+img.client {
+    width:40%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.quotes {
+    font-size: 10px;
 }
 section {
     padding: 50px 0;
